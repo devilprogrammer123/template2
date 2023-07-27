@@ -21,6 +21,9 @@
         font-family: sans-serif;
     }
 
+    .none{
+            display: none;
+        }
 
     .blue {
         background-color: rgb(28, 102, 222);
@@ -63,6 +66,13 @@
     .inforight a {
         padding: 20px 20px;
     }
+    .inforight select{
+        background-color: rgb(28, 102, 222) ;
+        border: none;
+        color: white;
+        font-size: large;
+        outline: none;
+    }
 
     .infocon {
         border-bottom: 1px solid rgba(255, 255, 255, 0.133);
@@ -72,6 +82,8 @@
     .logintag {
         /* border-right: 1px solid #000; */
     }
+
+    
 
 
 
@@ -177,7 +189,7 @@
     .showimg {
         /* width: 100%; */
         overflow: hidden;
-        background-image: url("asset\ 2.png");
+        background-image: url("assets/asset\ 2.png");
         height: 100px;
         background-size: cover;
         margin-top: -95px;
@@ -297,7 +309,7 @@
         color: gray;
     }
 
-    .bottomfratures{
+    .bottomfeatures{
         display: grid;
         grid-template-columns: auto auto auto;
         padding: 20px;
@@ -374,7 +386,7 @@
 
     .planedetail ul{
 
-        list-style: url(check-solid.svg);
+        list-style: url(assets/check-solid.svg);
         line-height: 60px;
         font-size: larger;
         color: gray;
@@ -451,7 +463,7 @@
 
 
     .showimgblue{
-        background-image: url("asset 10.png");
+        background-image: url("assets/asset 10.png");
         background-size: cover;
         height: 170px;
         margin-top: -100px;
@@ -565,6 +577,130 @@
         /* width: 50%; */
         margin-right: 50px;
     }
+    
+
+
+
+
+
+
+
+    /* responsive  */
+    /* @media screen and (max-width:1000px) {
+        
+    } */
+
+    @media screen and (max-width: 1000px) {
+        
+        body{
+            /* display: none; */
+            /* background-color: red; */
+        }
+        
+        /* info */
+        .info span{
+            /* content: ""; */
+            display: none;
+        }
+
+        /* nav */
+        .navright ul i{
+            position: absolute;
+            right:  10%;
+            color: white;
+            font-size: 20px;
+            display: block;
+
+        }
+        .navright ul li{
+            display: none;
+        }
+
+
+/* search con */
+
+        .searchcon{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+
+        }
+        .leftsearch ,.rightsearch{
+            width: 100%;
+
+        }
+
+
+
+        /* features  */
+        .bottomfeatures{
+            display: block;
+            width: 80%;
+        }
+        .featurecol{
+            margin:40px ;
+        }
+
+
+
+        /* plans */
+        .plane{
+            display: block;
+            width: 80%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            align-items: center;
+        }
+        .planedetail{
+            margin: 100px 0px;
+        }
+
+
+
+        /* discount */
+        /* .discountcon{
+            display: block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+        } */
+
+
+
+        .showimgblue{
+            text-align: center;
+        }
+
+
+
+        /* linka */
+        .links{
+            display: grid;
+            grid-template-columns: auto auto;
+            position: relative;
+            left: 30%;
+            transform: translateX(-10%);
+        }
+        .links div{
+            margin: 40px 10px;
+        }
+
+
+
+
+        /* copyco */
+        .copycon{
+            flex-direction: column;
+        }
+        .rightcopy ,.leftcopy{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+
 
 </style>
 
@@ -618,7 +754,9 @@
                                 <i class="fa-solid fa-comments"></i>
                                 Live Chat
                             </button></li>
+                        <i class="fa-solid fa-bars none"></i>
                     </ul>
+                    
                 </div>
             </nav>
         </div>
@@ -636,7 +774,7 @@
                     <a href="#">Get Start Now!</a>
                 </div>
                 <div class="slideright">
-                    <img src="asset 3.png" alt="">
+                    <img src="assets/asset 3.png" alt="">
                 </div>
             </div>
         </div>
@@ -681,7 +819,7 @@
                     <h1>Overall Featureas</h1>
                     <p>Our revolutionary Cloud Solution is powerful, simple,and surprisingly affordable.</p>
                 </div>
-                <div class="bottomfratures">
+                <div class="bottomfeatures">
                     <div class="featrue1 featurecol">
                         <div class="icon">  
                             <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -811,7 +949,7 @@
         <div class="container discon">
             <div class="discountcon">
                 <div class="img2">
-                    <img src="asset 4.png" alt="">
+                    <img src="assets/asset 4.png" alt="">
                 </div>
                 <div class="discountdetail">
                     <h1>
