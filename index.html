@@ -30,10 +30,15 @@
     }
 
     .container {
-        /* border: 2px solid black; */
-        padding: 0px 5%;
 
+        /* border: 2px solid black; */
+        /* padding: 0px 5%; */
+        /* width: 100%; */
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-inline: 20vw;
     }
+
 
     a {
         text-decoration: none;
@@ -41,7 +46,6 @@
     }
 
     .info {
-        /*  */
         display: flex;
         justify-content: space-between;
         padding: 10px 0;
@@ -96,6 +100,7 @@
 
     .navbar {
         display: flex;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
@@ -104,19 +109,17 @@
     }
 
     .navright {
-        width: 70%;
-        height: 100%;
-
 
     }
 
     .navbar .navright ul {
         display: flex;
         list-style: none;
-        justify-content: space-between;
         width: 100%;
-        /* height: 100%; */
         align-items: center;
+    }
+    .navright ul li{
+        margin: 0px 50px;
     }
 
     .navright ul li button {
@@ -141,7 +144,7 @@
     }
 
     .slideleft {
-        width: 50%;
+        /* width: 50%; */
 
     }
 
@@ -204,6 +207,7 @@
         align-items: center;
         padding-top: 50px;
         padding-bottom: 50px;
+        
     }
 
     .leftsearch {
@@ -265,6 +269,7 @@
 
     .search {
         margin-bottom: 30px;
+        text-align: center;
     }
 
 
@@ -363,7 +368,7 @@
     }
     .plane{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         margin-top: 20px;
         margin: 50px 0px;
@@ -494,6 +499,7 @@
         justify-content: space-between;
         padding: 20px;
         margin-top: 40px;
+        gap: 0;
     }
     .links ul{
         list-style: none;
@@ -508,7 +514,7 @@
 
     .copyright{
         display: flex;
-        justify-content: space-between;
+
     }
     .subnews{
         width: 35%;
@@ -560,7 +566,7 @@
     }
 
     .rightcopy{
-        width: 50%;
+        /* width: 50%; */
         display: flex;
         
     }
@@ -590,11 +596,14 @@
         
     } */
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1300px) {
         
         body{
             /* display: none; */
             /* background-color: red; */
+        }
+        .container{
+            padding: 10px;
         }
         
         /* info */
@@ -624,11 +633,21 @@
             align-items: center;
             justify-content: center;
             font-size: 1rem;
-
+            text-align: center;
         }
         .leftsearch ,.rightsearch{
             width: 100%;
 
+        }
+        .searchbtn{
+            padding: 0px;
+            content: "hello";
+        }
+
+
+        /* slide */
+        .slideright{
+            display: none;
         }
 
 
@@ -698,6 +717,13 @@
         .rightcopy ,.leftcopy{
             margin: 0px;
             padding: 0px;
+        }
+
+
+
+
+        .products ,.programs,.company,.subnews{
+            width: 100%;
         }
     }
 
@@ -797,7 +823,8 @@
                         <option value=".com">.org</option>
                         <option value=".com">.biz</option>
                     </select>
-                    <input class="searchbtn" type="button" value="Search Domain">
+                    <button class="searchbtn">search Domain</button>
+
                 </div>
                 <div class="extention">
                     <ul>
